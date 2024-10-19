@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+/* HTML and Body Styles */
+
+html {
+	background: url(images/drums-background.jpg) center center / cover no-repeat fixed;
+	font-family: Arial, serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header Styles */
+
+#mobile_header_box {
+	display: none;
+}
+
+header img{
+	width: 95%;
+	height: 400px;
+	display: block;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 20px;
+	background: gray;
+	width: 95%;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+
+nav.menu {
+	background: rgb(117, 5, 22);
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	font-size: calc(1vw + 1vh);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	background: rgb(200, 5, 22);
+	border-radius: 4px;
+}
+
+/* Footer Styles */
+
+footer {
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	padding: 20px;
+	margin-top: auto;
+}
+
+/* Paragraph Styles */
+
+.home_p, .story, .about, .class_page, 
+.repairs_p, .custom_work, .contact_p, .detail_p {
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+/* Article Styles */
+
+#home_article, #our_story, #about_fd, #class_content, 
+#repairs, #custom_work, #reviews, #contact_us {
+	color: white;
+	background: gray;
+	width: 95%;
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+
+#about_fd {
+	padding-bottom: 20px;
+}
+
+/* Home */
+
+#fd_banner {
+	width: 95%;
+	display: block;
+	margin: auto;
+	padding-top: 20px;
+}
+
+/* Title Styles */
+
+h1.article_title {
+	padding-left: 10px;
+	font-size: 3em;
+	color: white;
+}
+
+
+h2.subtitle {
+	padding-left: 10px;
+	font-size: 2em;
+}
+
+/* Link Styles */
+
+a.body_link {
+	text-decoration: none;
+	color: rgb(117, 5, 22);
+}
+
+a:hover.body_link {
+	background: rgb(200, 5, 22);
+	border-radius: 4px;
+}
+
+/* About */
+
+#fd_hours {
+	font-size: 1.2em;
+	border: 1px solid;
+	margin-left: 10px;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid;
+	padding: 10px;
+}
+
+/* Catalog */
+
+#catalog_items {
+	display: block;
+	margin: auto;
+	width: 95%;
+}
+
+.cat_image {
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 150px;
+	max-height: 150px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+
+img:hover.cat_image {
+	opacity: 0.9;
+}
+
+div.cat_item {
+	color: white;
+	font-size: 1.5em;
+}
+
+#cat_title {
+	font-size: 3em;
+	color: white;
+}
+
+p.cat_p{
+	margin-bottom: 5px;
+}
+
+/* Catalog Details */
+
+.cat_details {
+	width: 95%;
+	margin: auto;
+}
+
+.detail_img {
+	min-height: 250px;
+	min-width: 250px;
+	height: 30%;
+	width: 30%;
+	border-radius: 4px;
+}
+
+.details_area {
+	color: white;
+	background: gray;
+	width: 100%;
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+
+.details_title {
+	color: white;
+	font-size: 3em;
+}
+
+/* Custom Work */
+
+.custom_img {
+	width: 30%;
+	border-radius: 4px;
+}
+
+#custom_images {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+/* Brand Partners*/
+
+#brand_images {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	margin: auto;
+	background: white;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+.partner_img {
+	width: 40vw;
+	height: 40vh;
+}
+
+.img_row {
+	display: flex;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	justify-content: space-between;
+}
+
+#partners_title {
+	color: white;
+	font-size: 3em;
+	width: 97.5%;
+	margin-left: auto;
+}
+
+/* Reviews */
+
+blockquote {
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+/* Contact Us */
+
+form {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+input[type=text], input[type=email], textarea {
+	width: 50%;
+	padding: 15px;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+textarea {
+	height: 200px;
+}
+
+label {
+	padding: 10px 10px 10px 0;
+	display: inline-block;
+}
+
+.row_labels {
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 1.5em;
+}
+
+.row_inputs {
+	float: left;
+	width: 90%;
+	margin-top: 10px;
+}
+
+input[type=submit] {
+	padding: 15px;
+	border-radius: 4px;
+	background-color: rgb(117, 5, 22);
+	color: white;
+	font-size: 1em;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(200, 5, 22);
+}
+
+
+
+/* ===============================
+   Mobile Devices: 0 to 769px 
+   ===============================
+*/
+@media only screen and (max-width: 769px) {
+
+	/* Homepage */
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		font-size: 1.5em;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav li {
+		padding-bottom: 10px;
+	}
+
+	nav.menu {
+		background: rgb(117, 5, 22);
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+	#fd_logo {
+		display: none;
+	}
+
+	#mobile_header_box {
+		display: flex;
+	}
+
+	#fd_mobile_logo {
+		width: 20vw;
+		height: 20vh;
+		margin-left: auto;
+		padding-top: 0.5em;
+		margin-top: 0;
+		padding-left: 10vw;
+		padding-right: 1vw;
+	}
+
+	#mobile_title {
+		font-family: Arial;
+		padding-left: 20px;
+		margin-bottom: 0;
+		font-size: 3em;
+		justify-content: flex-start;
+	}
+
+	#mobile_subtitle {
+		margin-top: 0;
+		padding-top: 10px;
+		padding-left: 20px;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		margin-top: 20px;
+		background: gray;
+		width: 95%;
+		opacity: 0.9;
+		border-radius: 20px;
+	}
+
+	/* Custom Work */
+
+	#custom_images {
+		flex-direction: column;
+	}
+
+	.custom_img {
+		padding-bottom: 10px;
+		width: 60%;
+		height: 60%;
+	}
+
+	/* Contact Us */
+
+	.row_inputs {
+		width: 100%;
+	}
+
+	input[type=text], input[type=email], textarea {
+		width: 85%;
+	}
+
+	/* Catalog Details */
+
+	.detail_img {
+		max-width: 250px;
+		max-height: 250px;
+	}
+
+}
+
